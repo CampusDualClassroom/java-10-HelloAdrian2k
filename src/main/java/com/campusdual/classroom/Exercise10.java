@@ -6,13 +6,13 @@ public class Exercise10 {
 
     public static void main(String[] args) {
         byte contador = 0;
-        while (contador < 2) {
+        do{
             String colorBola = getBall();
             System.out.println("La bola es de color: " + colorBola);
-            if (colorBola.equals("azul")) {
+            if ("azul".equals(colorBola)) {
                 contador++;
             }
-        }
+        }while(contador < 2);
     }
 
     public static String getBall() {
